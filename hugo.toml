@@ -20,34 +20,59 @@ metaDataFormat = "json-ld"
     fontSrc = ["'self'", "https://fonts.gstatic.com"]
     imgSrc = ["'self'", "data:", "https:", "https://*.google.com", "https://*.gstatic.com"]
 
+# ===== SITE PARAMS =====
 [params]
   description = "Boost your productivity with expert reviews and tutorials on the latest AI tools. We test so you don't have to."
+  keywords = ["AI tools", "productivity", "software reviews", "automation", "machine learning", "SaaS", "developer tools"]
+  dateFormat = "January 2, 2006"
+  repoURL = "https://github.com/WIZOO1/aiflow-blog"
+  color = "blue"
+  fontSize = "base"
+  images = ["/images/og-image.png"]
+
+  [params.social]
+    twitter = "aiflowkit"
+    github = "WIZOO1"
+
+  [params.ads]
+    enable = false
+    google_adsense = "ca-pub-your-publisher-id"
+
+  [params.newsletter]
+    enable = true
+    title = "Join the AI Productivity Insider"
+    description = "Get weekly reviews of new AI tools and productivity hacks."
+
 [author]
   name = "AI Flow Kit Team"
   # You can add more author fields later:
   # email = "your@email.com"
   # link = "https://aiflowkit.xyz/about"
-  keywords = ["AI tools", "productivity", "software reviews", "automation", "machine learning", "SaaS", "developer tools"]
-  dateFormat = "January 2, 2006"
-  repoURL = "https://github.com/WIZOO1/aiflow-blog"
+
+# ===== MENU STRUCTURE =====
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "reviews"
+  name = "Tool Reviews"
+  url = "/categories/reviews/"
+  weight = 20
+
+# ... (keep the rest of your menu configuration exactly as it was) ...
+[author]  name = "AI Flow Kit Team"
+  # You can add more author fields later:
+  # email = "your@email.com"
+  # link = "https://aiflowkit.xyz/about"
   
   color = "blue"
   fontSize = "base"
   
   images = ["/images/og-image.png"]
   
-  [params.social]
-    twitter = "aiflowkit"
-    github = "WIZOO1"
-    
-  [params.ads]
-    enable = false
-    google_adsense = "ca-pub-your-publisher-id"
-  
-  [params.newsletter]
-    enable = true
-    title = "Join the AI Productivity Insider"
-    description = "Get weekly reviews of new AI tools and productivity hacks."
 
 [[menu.main]]
   identifier = "home"
