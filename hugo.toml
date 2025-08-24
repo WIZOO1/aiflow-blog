@@ -22,7 +22,11 @@ metaDataFormat = "json-ld"
 
 [params]
   description = "Boost your productivity with expert reviews and tutorials on the latest AI tools. We test so you don't have to."
-  author = "AI Flow Kit Team"
+[author]
+  name = "AI Flow Kit Team"
+  # You can add more author fields later:
+  # email = "your@email.com"
+  # link = "https://aiflowkit.xyz/about"
   keywords = ["AI tools", "productivity", "software reviews", "automation", "machine learning", "SaaS", "developer tools"]
   dateFormat = "January 2, 2006"
   repoURL = "https://github.com/WIZOO1/aiflow-blog"
